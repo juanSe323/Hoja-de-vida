@@ -69,14 +69,13 @@
 </div>
 
 <script>
-    // Función que detecta el desplazamiento en la página
     window.onscroll = function() {
         mostrarBoton();
     };
 
     function mostrarBoton() {
         const boton = document.querySelector(".btn-arriba");
-        // Si el usuario baja más de 200px, muestra el botón
+        
         if (document.documentElement.scrollTop > 100) {
             boton.style.display = "block";
         } else {
